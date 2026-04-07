@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Приглашение на свадьбу Анастасии и Рафаэля — 8 августа 2026" />
+    <title>Анастасия и Рафаэль — свадьба</title>
+    <!-- Preload критичного фонового изображения hero -->
+    <link rel="preload" href="/hero-bg.jpg" as="image" fetchpriority="high" />
+    <script type="module" crossorigin src="/assets/index-lq94RgSC.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-DbzEulKc.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">К содержимому</a>
+
+    <header class="site-header" data-reveal>
+      <div class="site-header__inner">
+        <span class="site-header__brand" aria-hidden="true">A & R</span>
+        <nav class="site-nav" aria-label="Разделы страницы">
+          <a href="#hero">Главная</a>
+          <a href="#countdown">Отсчёт</a>
+          <a href="#maps">Как добраться</a>
+          <a href="#timing">Тайминг</a>
+          <a href="#wishes">Пожелания</a>
+          <a href="#dresscode">Дресс-код</a>
+          <a href="#rsvp">Анкета</a>
+        </nav>
+        <button type="button" class="site-header__menu-btn" aria-expanded="false" aria-controls="mobile-nav" id="menu-btn">
+          Меню
+        </button>
+      </div>
+      <div class="mobile-nav" id="mobile-nav" hidden>
+        <a href="#hero">Главная</a>
+        <a href="#countdown">Отсчёт</a>
+        <a href="#maps">Как добраться</a>
+        <a href="#timing">Тайминг</a>
+        <a href="#wishes">Пожелания</a>
+        <a href="#dresscode">Дресс-код</a>
+        <a href="#rsvp">Анкета</a>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="hero" aria-labelledby="hero-title">
+        <div class="hero__bg" aria-hidden="true"></div>
+        <div class="hero__veil" aria-hidden="true"></div>
+        <div class="hero__content">
+          <p class="hero__eyebrow" data-reveal>8 августа 2026</p>
+          <h1 class="hero__title" id="hero-title">
+            <span class="hero__name hero__name--bride" data-reveal></span>
+            <span class="hero__ampersand" data-reveal>&</span>
+            <span class="hero__name hero__name--groom" data-reveal></span>
+          </h1>
+          <p class="hero__tagline" data-reveal></p>
+        </div>
+        <a class="hero__scroll" href="#invite" data-reveal>
+          <span>Листайте</span>
+          <span class="hero__scroll-line" aria-hidden="true"></span>
+        </a>
+      </section>
+
+      <!-- 1. Приветствие -->
+      <section class="section section--invite" id="invite" aria-labelledby="invite-title">
+        <div class="section__inner section__inner--narrow">
+          <div class="invite" id="invite-mount" data-reveal></div>
+        </div>
+      </section>
+
+      <!-- 2. Обратный отсчёт -->
+      <section class="section section--countdown" id="countdown" aria-labelledby="countdown-title">
+        <div class="section__inner">
+          <h2 class="section__title" id="countdown-title" data-reveal>До нашего дня</h2>
+          <p class="section__lead" data-reveal>Отсчёт до регистрации в ЗАГСе</p>
+          <div class="countdown-layout" data-reveal>
+            <div class="countdown" aria-live="polite">
+              <div class="countdown__unit">
+                <span class="countdown__value" data-cd="days">—</span>
+                <span class="countdown__label">дней</span>
+              </div>
+              <div class="countdown__unit">
+                <span class="countdown__value" data-cd="hours">—</span>
+                <span class="countdown__label">часов</span>
+              </div>
+              <div class="countdown__unit">
+                <span class="countdown__value" data-cd="minutes">—</span>
+                <span class="countdown__label">минут</span>
+              </div>
+              <div class="countdown__unit">
+                <span class="countdown__value" data-cd="seconds">—</span>
+                <span class="countdown__label">секунд</span>
+              </div>
+            </div>
+            <div class="event-calendar" id="event-calendar" aria-label="Месяц торжества, день события отмечен"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. Карты — Как добраться (тёмная секция) -->
+      <section class="section section--maps section--dark" id="maps" aria-labelledby="maps-title">
+        <div class="section__inner">
+          <h2 class="section__title" id="maps-title" data-reveal>Как добраться</h2>
+          <p class="section__lead" data-reveal>Два адреса в Набережных Челнах и районе</p>
+          <div class="maps-grid" id="maps-mount" data-reveal-stagger></div>
+        </div>
+      </section>
+
+      <!-- 4. Тайминг дня (тёмная секция, примыкает к maps) -->
+      <section class="section section--timing section--dark" id="timing" aria-labelledby="timing-title">
+        <div class="section__inner">
+          <h2 class="section__title section__title--italic" id="timing-title" data-reveal>Тайминг дня</h2>
+          <div class="timeline" id="timing-mount" data-reveal-stagger></div>
+        </div>
+      </section>
+
+      <!-- 5. Пожелания -->
+      <section class="section section--wishes" id="wishes" aria-labelledby="wishes-title">
+        <div class="section__inner section__inner--narrow">
+          <div class="wishes" id="wishes-mount" data-reveal></div>
+        </div>
+      </section>
+
+      <!-- 6. Дресс-код -->
+      <section class="section section--dress" id="dresscode" aria-labelledby="dress-title">
+        <div class="section__inner section__inner--split section__inner--dress">
+          <div data-reveal>
+            <h2 class="section__title" id="dress-title"></h2>
+            <p class="dress__text" id="dress-text"></p>
+          </div>
+          <div class="dress__palette" data-reveal>
+            <div
+              class="dress__swatches"
+              id="dress-swatches"
+              role="list"
+              aria-label="Оттенки палитры дресс-кода"
+            ></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7. Анкета гостя (последняя, тёмный фон) -->
+      <section class="section section--rsvp section--dark" id="rsvp" aria-labelledby="rsvp-title">
+        <div class="section__inner section__inner--narrow">
+          <h2 class="section__title" id="rsvp-title" data-reveal></h2>
+          <p class="rsvp__intro" id="rsvp-intro" data-reveal></p>
+          <div class="rsvp__warn" id="rsvp-warn" hidden data-reveal></div>
+          <form class="rsvp-form" id="rsvp-form" novalidate>
+            <div class="rsvp-progress" aria-hidden="true">
+              <div class="rsvp-progress__track">
+                <div class="rsvp-progress__fill" id="rsvp-progress-fill"></div>
+              </div>
+              <span class="rsvp-progress__label" id="rsvp-step-label"></span>
+            </div>
+
+            <div class="rsvp-panels">
+              <div class="rsvp-panel is-active" data-step="0" role="group" aria-labelledby="rsvp-step-0-title">
+                <h3 class="rsvp-panel__title" id="rsvp-step-0-title">Кто вы</h3>
+                <p class="rsvp-panel__hint">Имя и фамилия того, кто заполняет анкету (можно скорректировать в списке гостей).</p>
+                <div class="field">
+                  <input
+                    class="field__input"
+                    id="f-first"
+                    name="firstName"
+                    type="text"
+                    autocomplete="given-name"
+                    placeholder=" "
+                    required
+                  />
+                  <label class="field__label" for="f-first">Имя</label>
+                </div>
+                <div class="field">
+                  <input
+                    class="field__input"
+                    id="f-last"
+                    name="lastName"
+                    type="text"
+                    autocomplete="family-name"
+                    placeholder=" "
+                    required
+                  />
+                  <label class="field__label" for="f-last">Фамилия</label>
+                </div>
+              </div>
+
+              <div class="rsvp-panel" data-step="1" role="group" aria-labelledby="rsvp-step-1-title" hidden>
+                <h3 class="rsvp-panel__title" id="rsvp-step-1-title">Присутствие</h3>
+                <fieldset class="choice-group">
+                  <legend class="visually-hidden">Придёте ли вы</legend>
+                  <label class="choice choice--radio">
+                    <input type="radio" name="eventAttendance" value="not_coming" required />
+                    <span class="choice__ui"></span>
+                    <span class="choice__text">Не смогу прийти</span>
+                  </label>
+                  <label class="choice choice--radio">
+                    <input type="radio" name="eventAttendance" value="zags_only" />
+                    <span class="choice__ui"></span>
+                    <span class="choice__text">Только ЗАГС</span>
+                  </label>
+                  <label class="choice choice--radio">
+                    <input type="radio" name="eventAttendance" value="banquet_only" />
+                    <span class="choice__ui"></span>
+                    <span class="choice__text">Только банкет</span>
+                  </label>
+                  <label class="choice choice--radio">
+                    <input type="radio" name="eventAttendance" value="both" />
+                    <span class="choice__ui"></span>
+                    <span class="choice__text">ЗАГС и банкет</span>
+                  </label>
+                </fieldset>
+              </div>
+
+              <div class="rsvp-panel" data-step="2" role="group" aria-labelledby="rsvp-step-2-title" hidden>
+                <h3 class="rsvp-panel__title" id="rsvp-step-2-title">Состав компании</h3>
+                <p class="rsvp-panel__hint">Укажите всех, кто приходит, включая вас. Для каждого — фамилия, имя и кем приходится. Отметьте детей: для них не спрашиваем алкоголь.</p>
+                <div class="field field--inline">
+                  <label class="field__static-label" for="f-guest-count">Сколько человек</label>
+                  <input
+                    class="field__input field__input--narrow"
+                    id="f-guest-count"
+                    name="guestCount"
+                    type="number"
+                    min="1"
+                    max="12"
+                    value="1"
+                    inputmode="numeric"
+                    required
+                  />
+                </div>
+                <div class="rsvp-guest-rows" id="guest-rows" aria-live="polite"></div>
+              </div>
+
+              <div class="rsvp-panel" data-step="3" role="group" aria-labelledby="rsvp-step-3-title" hidden>
+                <h3 class="rsvp-panel__title" id="rsvp-step-3-title">Трансфер</h3>
+                <fieldset class="choice-group">
+                  <legend class="visually-hidden">Нужен ли трансфер</legend>
+                  <label class="choice choice--radio">
+                    <input type="radio" name="transfer" value="need" required />
+                    <span class="choice__ui"></span>
+                    <span class="choice__text">Нужен трансфер</span>
+                  </label>
+                  <label class="choice choice--radio">
+                    <input type="radio" name="transfer" value="no_need" />
+                    <span class="choice__ui"></span>
+                    <span class="choice__text">Трансфер не нужен</span>
+                  </label>
+                  <label class="choice choice--radio">
+                    <input type="radio" name="transfer" value="own" />
+                    <span class="choice__ui"></span>
+                    <span class="choice__text">Приеду сам(а) / своим ходом</span>
+                  </label>
+                </fieldset>
+                <div class="field">
+                  <textarea class="field__input field__input--area" id="f-transfer-note" name="transferNote" rows="2" placeholder=" "></textarea>
+                  <label class="field__label" for="f-transfer-note">Комментарий по трансферу (по желанию)</label>
+                </div>
+              </div>
+
+              <div class="rsvp-panel" data-step="4" role="group" aria-labelledby="rsvp-step-4-title" hidden>
+                <h3 class="rsvp-panel__title" id="rsvp-step-4-title">Питание</h3>
+                <p class="rsvp-panel__hint">Для каждого гостя: аллергии, вегетарианство, детское меню и т.п. Если нет особенностей — напишите «нет».</p>
+                <div class="rsvp-per-guest-mount" id="food-mount"></div>
+              </div>
+
+              <div class="rsvp-panel" data-step="5" role="group" aria-labelledby="rsvp-step-5-title" hidden>
+                <h3 class="rsvp-panel__title" id="rsvp-step-5-title">Напитки</h3>
+                <p class="rsvp-panel__hint">
+                  У каждого гостя — безалкогольные напитки (соки, вода и т.д.). У взрослых дополнительно — предпочтения по алкоголю; для детей блок алкоголя недоступен.
+                </p>
+                <div class="rsvp-per-guest-mount" id="alcohol-mount"></div>
+              </div>
+
+              <div class="rsvp-panel" data-step="6" role="group" aria-labelledby="rsvp-step-6-title" hidden>
+                <h3 class="rsvp-panel__title" id="rsvp-step-6-title">Проверьте данные</h3>
+                <dl class="rsvp-summary" id="rsvp-summary"></dl>
+              </div>
+            </div>
+
+            <div class="rsvp-success" id="rsvp-success" hidden>
+              <div class="rsvp-success__icon" aria-hidden="true">✓</div>
+              <p class="rsvp-success__text">Спасибо! Мы получили ваш ответ.</p>
+            </div>
+            <p class="rsvp-error" id="rsvp-error" role="alert" hidden></p>
+
+            <div class="rsvp-actions">
+              <button type="button" class="btn btn--ghost" id="rsvp-back" hidden>Назад</button>
+              <button type="button" class="btn btn--primary" id="rsvp-next">Далее</button>
+              <button type="submit" class="btn btn--primary" id="rsvp-submit" hidden>Отправить</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <footer class="site-footer" id="footer" data-reveal>
+        <p class="site-footer__note" id="footer-note"></p>
+        <p class="site-footer__org" id="footer-org" hidden></p>
+      </footer>
+    </main>
+
+    <div class="hero-leave-veil" id="hero-leave-veil" aria-hidden="true"></div>
+
+    <button type="button" class="music-fab" id="music-toggle" aria-pressed="false" aria-label="Включить фоновую музыку">
+      <span class="music-fab__icon music-fab__icon--play" aria-hidden="true">♪</span>
+      <span class="music-fab__icon music-fab__icon--pause" aria-hidden="true">‖</span>
+    </button>
+    <audio id="bg-audio" src="/audio/theme.mp3" preload="none" loop></audio>
+
+  </body>
+</html>
